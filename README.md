@@ -16,17 +16,7 @@ brew install chezmoi
 chezmoi init https://github.com/digiangler/dotfiles_2021.git
 ```
 
-#### 3. Login to 1password cli
-
-```
-# On bash
-eval $(op my.1password.com メールアドレス)
-
-# On fish with fish-replay
-replay 'eval $(op my.1password.com メールアドレス)'
-```
-
-#### 4. Apply dotfiles
+#### 3. Apply dotfiles
 
 ```
 chezmoi apply
