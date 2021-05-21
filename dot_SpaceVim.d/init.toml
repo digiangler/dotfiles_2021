@@ -1,0 +1,262 @@
+#=============================================================================
+# Title       : SpaceVim
+# Description : My Custom SpaceVim Settings
+# Author      : H.Y.
+# LastUpdate  : 2021/05/16
+# Since       : 2021/04/24
+# Copyright   : © 2021 Digi-Angler
+# License     : MIT License
+# Version     : 1.0
+#=============================================================================
+
+#=============================================================================
+# dark_powered.toml --- dark powered configuration example for SpaceVim
+# Copyright (c) 2016-2020 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg at 163.com >
+# URL: https://spacevim.org
+# License: GPLv3
+#=============================================================================
+
+# All SpaceVim option below [option] section
+[options]
+    # set spacevim theme. by default colorscheme layer is not loaded,
+    # if you want to use more colorscheme, please load the colorscheme
+    # layer
+    colorscheme = "dracula"
+    colorscheme_bg = "dark"
+    # Disable guicolors in basic mode, many terminal do not support 24bit
+    # true colors
+    enable_guicolors = true
+    # Disable statusline separator, if you want to use other value, please
+    # install nerd fonts
+    guifont = "FiraCode Nerd Font:h11"
+    statusline_separator = "arrow"
+    statusline_iseparator = "arrow"
+    buffer_index_type = 4
+    enable_tabline_filetype_icon = true
+    enable_statusline_mode = true
+    statusline_left_sections = [
+      'winnr',
+      'major mode',
+      'filename',
+      'fileformat',
+      'minor mode lighters',
+      'version control info',
+      'search status'
+    ]
+    statusline_right_sections = [
+      'cursorpos',
+      'percentage',
+      'input method',
+      'date',
+      'time'
+    ]
+
+    bootstrap_before = 'myspacevim#before'
+    bootstrap_after = 'myspacevim#after'
+
+    filemanager = "nerdtree"
+    vim_help_language = "jp"
+
+# Enable autocomplete layer
+[[layers]]
+name = 'autocomplete'
+auto_completion_return_key_behavior = "complete"
+auto_completion_tab_key_behavior = "smart"
+
+[[layers]]
+name = 'shell'
+default_position = 'top'
+default_height = 30
+
+[[layers]]
+  name = "japanese"
+
+[[layers]]
+  name = "colorscheme"
+
+[[layers]]
+  name = "ui"
+  enable = true
+  enable_sidebar = true
+
+[[layers]]
+  name = "fzf"
+
+[[layers]]
+  name = "tools"
+
+[[layers]]
+  name = "format"
+  format_on_save = true
+
+[[layers]]
+  name = "checkers"
+
+[[layers]]
+  name = "VersionControl"
+
+[[layers]]
+  name = "core#statusline"
+
+[[layers]]
+  name = "git"
+
+[[layers]]
+  name = "github"
+
+[[layers]]
+  name = "lang#dockerfile"
+
+[[layers]]
+  name = 'core'
+  filetree_show_hidden = true
+
+[[layers]]
+  name = "lang#vim"
+
+[[layers]]
+  name = "tmux"
+
+[[layers]]
+  name = "lang#html"
+
+[[layers]]
+  name = "lang#javascript"
+  auto_fix = true
+  enable_flow_syntax = true
+  format_on_save = true
+
+[[layers]]
+  name = "lang#typescript"
+
+[[layers]]
+  name = "lang#python"
+  python_interpreter = "/Users/digi-angler/.asdf/shims/python"
+
+[[layers]]
+  name = "lang#r"
+
+[[layers]]
+  name = "lang#go"
+
+[[layers]]
+  name = "lang#rust"
+
+[[layers]]
+  name = "lang#java"
+  format_on_save = true
+
+[[layers]]
+  name = "lang#csharp"
+  highlight_types = 0
+
+[[layers]]
+  name = "lang#erlang"
+
+[[layers]]
+  name = "lang#elm"
+
+[[layers]]
+  name = "lsp"
+  filetypes = [
+    # "html",
+    # "css",
+    # "javascript",
+    # "typescript",
+    # "python",
+    # "r",
+    # "golang",
+    # "rust",
+    # "java",
+    # "csharp",
+    # "erlang",
+    # "elm"
+  ]
+  [layers.override_cmd]
+    # rust = ["rustup", "run", "nightly", "rls"]
+
+#=============================================================================
+# My Custom Plugins
+#=============================================================================
+
+[[custom_plugins]]
+  repo = "dracula/vim"
+  name = "dracula"
+  merged = false
+
+[[custom_plugins]]
+  repo = "Roboron3042/Cyberpunk-Neon"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "vim-airline/vim-airline"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "vim-airline/vim-airline-themes"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "neoclide/coc.nvim"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "airblade/vim-rooter"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "junegunn/fzf.vim"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "junegunn/fzf"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "frazrepo/vim-rainbow"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "ojroques/vim-scrollstatus"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "vifm/vifm.vim"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "preservim/nerdtree"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "tiagofumo/vim-nerdtree-syntax-highlight"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "ryanoasis/vim-devicons"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "dbeniamine/cheat.sh-vim"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "justinmk/vim-sneak"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "kien/ctrlp.vim"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "vim-jp/vimdoc-ja"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "tpope/vim-fugitive"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "airblade/vim-gitgutter"
+  merged = 0
