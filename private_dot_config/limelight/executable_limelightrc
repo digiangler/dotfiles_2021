@@ -1,0 +1,24 @@
+#!/usr/bin/env sh
+
+#=============================================================================
+# Title       : limelight
+# Description : My Custom limelight Settings
+# Author      : H.Y.
+# LastUpdate  : 2021/05/24
+# Since       : 2021/05/24
+# Copyright   : © 2021 Digi-Angler
+# License     : MIT License
+# Version     : 1.0
+#=============================================================================
+
+#=============================================================================
+# Personal Settings
+#=============================================================================
+
+limelight -m config width            4
+limelight -m config radius           0
+limelight -m config placement        interior
+limelight -m config active_color     0xfff57800
+limelight -m config normal_color     0xffea00d9
+
+echo "limelight configuration loaded.."
