@@ -236,6 +236,9 @@ source /usr/local/opt/asdf/asdf.fish
 # java
 
 
+# Flutter
+set -x PATH ~/bin/flutter/bin $PATH
+
 # mysql
 
 
