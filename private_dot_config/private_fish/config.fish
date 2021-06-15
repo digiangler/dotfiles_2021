@@ -116,7 +116,7 @@ alias push "git push"
 alias ghg "ghq get"
 alias ghl "ghq list"
 alias gad "git add ."
-alias gcm "git commit -m "Initial commit""
+alias gcm "git commit -m 'Initial commit'"
 alias gps "git push -u origin main"
 
 # Shells
