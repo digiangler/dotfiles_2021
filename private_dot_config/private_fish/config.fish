@@ -110,6 +110,9 @@ alias cc "chezmoi cd"
 
 # Git
 alias g git
+alias status "git status"
+alias commit "git commit"
+alias push "git push"
 alias ghg "ghq get"
 alias ghl "ghq list"
 
@@ -138,24 +141,34 @@ alias emacs nvim
 ## Open shell files
 alias vz "v ~/.zshrc"
 alias nz "nv ~/.zshrc"
+alias cz "chezmoi edit ~/.zshrc"
 alias vv "v ~/.vimrc"
 alias nv "nv ~/.vimrc"
+alias cv "chezmoi edit ~/.vimrc"
 alias vt "v ~/.tmux.conf"
 alias nt "nv ~/.tmux.conf"
+alias ct "chezmoi edit ~/.tmux.conf"
 alias vf "v ~/.config/fish/config.fish"
 alias nf "nv ~/.config/fish/config.fish"
+alias cf "chezmoi edit ~/.config/fish/config.fish"
 alias vo "v ~/.config/fish/config-osx.fish"
 alias no "nv ~/.config/fish/config-osx.fish"
+alias co "chezmoi edit ~/.config/fish/config-osx.fish"
 alias vw "v ~/.config/fish/config-windows.fish"
 alias nw "nv ~/.config/fish/config-windows.fish"
+alias cw "chezmoi edit ~/.config/fish/config-windows.fish"
 alias vsi "v ~/.SpaceVim.d/init.toml"
 alias nsi "nv ~/.SpaceVim.d/init.toml"
+alias csi "chezmoi edit ~/.SpaceVim.d/init.toml"
 alias vsm "v ~/.SpaceVim.d/autoload/myspacevim.vim"
 alias nsm "nv ~/.SpaceVim.d/autoload/myspacevim.vim"
+alias csm "chezmoi edit ~/.SpaceVim.d/autoload/myspacevim.vim"
 alias vn "v ~/.config/neofetch/config.conf"
 alias nn "nv ~/.config/neofetch/config.conf"
+alias cn "chezmoi edit ~/.config/neofetch/config.conf"
 alias vs "v ~/.config/starship.toml"
 alias ns "nv ~/.config/starship.toml"
+alias cs "chezmoi edit ~/.config/starship.toml"
 
 ## When finished
 alias q quit
