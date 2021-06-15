@@ -115,6 +115,9 @@ alias commit "git commit"
 alias push "git push"
 alias ghg "ghq get"
 alias ghl "ghq list"
+alias gad "git add ."
+alias gcm "git commit -m "Initial commit""
+alias gps "git push -u origin main"
 
 # Shells
 alias bl "brew list"
@@ -137,6 +140,8 @@ alias nv nvim
 alias t tmux
 alias e emacs
 alias emacs nvim
+alias cdf "chezmoi diff"
+alias cap "chezmoi apply"
 
 ## Open shell files
 alias vz "v ~/.zshrc"
