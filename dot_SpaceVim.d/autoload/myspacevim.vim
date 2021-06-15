@@ -349,7 +349,8 @@ function! myspacevim#before() abort
   "=============================================================================
   let g:airline_powerline_fonts = 1
   let g:airline#extensions#tabline#enabled = 1
-  let g:airline_theme='dark'
+  let g:shades_of_purple_airline = 1
+  let g:airline_theme='shades_of_purple'
   let g:airline#extensions#coc#enabled = 1
   let g:airline_section_x = '%{ScrollStatus()} '
 

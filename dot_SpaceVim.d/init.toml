@@ -22,7 +22,7 @@
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer
-    colorscheme = "shellades_of_purple"
+    colorscheme = "shades_of_purple"
     colorscheme_bg = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
@@ -187,6 +187,10 @@ default_height = 30
 
 [[custom_plugins]]
   repo = "Roboron3042/Cyberpunk-Neon"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "Rigellute/shades-of-purple.vim"
   merged = 0
 
 [[custom_plugins]]
