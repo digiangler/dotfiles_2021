@@ -110,9 +110,9 @@ alias cc "chezmoi cd"
 
 # Git
 alias g git
-alias status "git status"
-alias commit "git commit"
-alias push "git push"
+alias gs "git status"
+alias gc "git commit"
+alias gp "git push"
 alias ghg "ghq get"
 alias ghl "ghq list"
 alias gad "git add ."
