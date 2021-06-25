@@ -255,7 +255,7 @@ source /usr/local/opt/asdf/asdf.fish
 
 
 # Flutter
-set -x PATH ~/bin/flutter/bin $PATH
+set -x PATH ~/flutter/bin $PATH
 
 # mysql
 
