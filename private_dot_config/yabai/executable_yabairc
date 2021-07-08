@@ -64,14 +64,16 @@ yabai -m config mouse_action2                resize
 yabai -m config debug_output on
 
 # Rules
-yabai -m rule --add app="^Dictionary$"         sticky=on layer=above manage=off
-yabai -m rule --add app="^Disk Utility$"       sticky=on layer=above manage=off
-yabai -m rule --add app="^Postlab$"            sticky=on layer=above manage=off
-yabai -m rule --add app="^System Preferences$" sticky=on layer=above manage=off
-yabai -m rule --add app="^Finder$"             sticky=on layer=above manage=off
-yabai -m rule --add app="^Alfred Preferences$" sticky=on layer=above manage=off
-yabai -m rule --add app="^System Information$" sticky=on layer=above manage=off
-yabai -m rule --add app="^App Store$"          sticky=on layer=above manage=off
+yabai -m rule --add app="^Dictionary$"              sticky=on layer=above manage=off
+yabai -m rule --add app="^Disk Utility$"            sticky=on layer=above manage=off
+yabai -m rule --add app="^Postlab$"                 sticky=on layer=above manage=off
+yabai -m rule --add app="^System Preferences$"      sticky=on layer=above manage=off
+yabai -m rule --add app="^Finder$"                  sticky=on layer=above manage=off
+yabai -m rule --add app="^Alfred Preferences$"      sticky=on layer=above manage=off
+yabai -m rule --add app="^System Information$"      sticky=on layer=above manage=off
+yabai -m rule --add app="^App Store$"               sticky=on layer=above manage=off
+yabai -m rule --add app="^MacX YouTube Downloader"  sticky=on layer=above
+manage=off
 
 # restore position of floating windows when they are manually unfloated
 # ~/Scripts/yabai_restore.sh
