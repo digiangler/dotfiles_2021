@@ -245,8 +245,9 @@ set -gx TERM xterm-256color
 # asdf-vm 設定
 source /usr/local/opt/asdf/asdf.fish
 
-# python
-
+# PHP
+set -gx PKG_CONFIG_PATH /usr/local/opt/icu4c/lib/pkgconfig /usr/local/opt/krb5/lib/pkgconfig /usr/local/opt/libedit/lib/pkgconfig /usr/local/opt/libxml2/lib/pkgconfig /usr/local/opt/openssl@1.1/lib/pkgconfig $PKG_CONFIG_PATH
+set -gx PHP_CONFIGURE_OPTIONS --with-openssl=/usr/local/opt/openssl@1.1 --with-libxml-dir=/usr/local/opt/libxml2 --with-iconv=/usr/local/opt/libiconv --with-zlib
 
 # go
 
